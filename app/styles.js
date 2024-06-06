@@ -14,6 +14,7 @@ export const StyledLogo = styled.Image`
 export const Title = styled.Text`
   font-size: 30px;
   font-weight: bold;
+  color: black;
 `;
 
 export const SliderArea = styled.View`
