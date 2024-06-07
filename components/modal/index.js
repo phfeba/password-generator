@@ -33,7 +33,7 @@ export function ModalPassword({ password, handleClose }) {
           <OpacityButton onPress={handleClose}>
             <GoBack>Voltar</GoBack>
           </OpacityButton>
-          <OpacityButton>
+          <OpacityButton onPress={handleCopyPassword}>
             <SavePassword>Salvar senha</SavePassword>
           </OpacityButton>
         </ButtonsArea>

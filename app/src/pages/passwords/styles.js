@@ -14,3 +14,13 @@ export const Title = styled.Text`
   color: #fff;
   font-weight: bold;
 `;
+
+export const PasswordsContent = styled.View`
+  flex: 1;
+  padding: 0px 60px;
+`;
+
+export const PasswordsList = styled.FlatList`
+  flex: 1;
+  padding-top: 14px;
+`;
