@@ -1,6 +1,13 @@
 import { useState } from 'react';
 import { Modal } from 'react-native';
-import { ButtonText, SliderArea, StyledContainer, StyledLogo, Title, TouchableButton } from './styles';
+import {
+  ButtonText,
+  SliderArea,
+  StyledContainer,
+  StyledLogo,
+  Title,
+  TouchableButton,
+} from './styles';
 import logo from '../../../../assets/images/logo.png';
 import Slider from '@react-native-community/slider';
 import { ModalPassword } from '../../../../components/modal';
@@ -40,11 +47,7 @@ export function Home() {
       <TouchableButton onPress={generatePassword}>
         <ButtonText>Gerar senha</ButtonText>
       </TouchableButton>
-      <Modal
-        visible={modalVisible}
-        animationType='fade'
-        transparent={true}
-      >
+      <Modal visible={modalVisible} animationType='fade' transparent={true}>
         <ModalPassword
           password={passwordValue}
           handleClose={() => setModalVisible(false)}

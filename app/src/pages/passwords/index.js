@@ -1,8 +1,13 @@
-import { View, Text } from 'react-native';
+import { useState, useEffect } from 'react';
+import { PasswordsContainer, Title, TitleArea } from './styles';
+import { useIsFocused } from '@react-navigation/native';
+
 export function Passwords() {
   return (
-    <View>
-      <Text>teste</Text>
-    </View>
+    <PasswordsContainer>
+      <TitleArea>
+        <Title>Minhas senhas</Title>
+      </TitleArea>
+    </PasswordsContainer>
   );
 }

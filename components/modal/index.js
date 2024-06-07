@@ -1,12 +1,27 @@
-import { ButtonsArea, GeneratedPassword, GoBack, ModalContainer, ModalContent, ModalTitle, OpacityButton, PasswordView, SavePassword } from './styles';
+import {
+  ButtonsArea,
+  GeneratedPassword,
+  GoBack,
+  ModalContainer,
+  ModalContent,
+  ModalTitle,
+  OpacityButton,
+  PasswordView,
+  SavePassword,
+} from './styles';
 import * as Clipboard from 'expo-clipboard';
+import useStorage from '../../hooks/useStorage';
 
 export function ModalPassword({ password, handleClose }) {
+  const { saveItem } = useStorage();
+
   async function handleCopyPassword() {
     await Clipboard.setStringAsync(password);
+    await saveItem('@pass', password);
     alert('Senha copiada com sucesso!');
     handleClose();
   }
+
   return (
     <ModalContainer>
       <ModalContent>
