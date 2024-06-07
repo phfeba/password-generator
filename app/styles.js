@@ -19,10 +19,20 @@ export const Title = styled.Text`
 
 export const SliderArea = styled.View`
   margin: 14px 0px;
-  width: 250px;
+  width: 70%;
   background-color: #fff;
   border-radius: 8px;
   padding: 8px;
+`;
+
+export const TouchableButton = styled.TouchableOpacity`
+  width: 70%;
+  background-color: #392de9;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 40px;
 `;
 
 export const ButtonText = styled.Text`
